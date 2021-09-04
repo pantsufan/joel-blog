@@ -70,7 +70,7 @@ MENUITEMS = [('Tags', '/tags'),('Archives', '/archives')]
 
 # PLUGINS
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap',]
+PLUGINS = ['sitemap']
 
 ## SITEMAP PLUGIN
 SITEMAP = {
