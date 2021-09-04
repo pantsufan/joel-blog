@@ -15,4 +15,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GH_PAGES_CNAME: ${{secrets.DOMAIN_CNAME}}
-          GH_PAGES_CNAME: joel28.ml
