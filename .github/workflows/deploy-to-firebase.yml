@@ -11,9 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: justgoodin/pelican-build-action@v0.1.10
-        env:
-          PELICAN_CONFIG_FILE: ./publishconf.py
-          PELICAN_CONTENT_FOLDER: ./content
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
