@@ -3,7 +3,7 @@
 
 AUTHOR = 'Joel'
 SITENAME = "WarHouse"
-SITEURL = ''
+SITEURL = 'joel28.ml'
 THEME = './brutalist'
 
 PATH = 'content'
