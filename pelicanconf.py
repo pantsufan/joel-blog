@@ -57,7 +57,7 @@ FIRST_NAME = 'Home'
 ATTRIBUTION = True
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
-MENUITEMS = [('Tags', '/tags'),('Archives', '/archives')]
+MENUITEMS = [('Tags', '/tags')]
 ## Social icons for footer
 ## Set these to whatever your unique public URL is for that platform
 ## I've left mine here as a example
