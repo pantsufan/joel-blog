@@ -7,7 +7,7 @@ SITEURL = 'joel28.ml'
 THEME = './brutalist'
 
 PATH = 'content'
-ARTICLE_PATHS = ['blog']
+ARTICLE_PATHS = ['Blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
