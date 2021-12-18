@@ -10,13 +10,13 @@ yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main f
 
 ### List of Commands
 
-1.  Grant Storage Permission
+-  Grant Storage Permission
 
 ```
 termux-setup-storage
 ```
 
-2.  Install Necessary Packages
+-  Install Necessary Packages
 
 ```
 pkg install -y python
@@ -26,37 +26,43 @@ pkg install -y python
 pkg install -y ffmpeg
 ```
 
-3.  Install yt-dlp
+-  Install yt-dlp
 
 ```
-pip install yt-dlp
+python3 -m pip install -U yt-dlp
 ```
 
-4.  Create YouTube Donwload Folder
+-  Create YouTube Donwload Folder
 
 ```
 mkdir /data/data/com.termux/files/home/storage/shared/YouTube
 ```
 
-5.  Creating yt-dlp Config (Choose Depending on Resolution)
+-  Creating yt-dlp Config (Choose Depending on Resolution)
 
 ```
 mkdir -p ~/.config/yt-dlp
 ```
 
-- Downloads videos in either 720p or 720p60fps
-
-```
+<details>
+  <summary>Downloads videos in either 720p or 720p60fps</summary>
+  
+  ```
 echo "-f mp4 -f 136+140/298+140 -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s-%(uploader)s.%(ext)s --no-mtime --sponsorblock-remove all" > ~/.config/yt-dlp/config
 ```
+</details>
 
-- Downloads videos in either 1080p or 1080p60fps
-
-```
+<details>
+  <summary>Downloads videos in either 1080p or 1080p60fps</summary>
+  
+  ```
 echo "-f mp4 -f 137+140/299+140 -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s-%(uploader)s.%(ext)s --no-mtime --sponsorblock-remove all" > ~/.config/yt-dlp/config
 ```
+</details>
 
-6. Configuring To Download From Share Menu
+
+
+- Configuring To Download From Share Menu
 
 ```
 mkdir ~/bin
