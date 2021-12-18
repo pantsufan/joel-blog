@@ -44,23 +44,17 @@ mkdir /data/data/com.termux/files/home/storage/shared/YouTube
 mkdir -p ~/.config/yt-dlp
 ```
 
-<details>
-  <summary>Downloads videos in either 720p or 720p60fps</summary>
-  
-  ```
+Downloads videos in either 720p or 720p60fps
+```
 echo "-f mp4 -f 136+140/298+140 -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s-%(uploader)s.%(ext)s --no-mtime --sponsorblock-remove all" > ~/.config/yt-dlp/config
 ```
-</details>
 
-<details>
-  <summary>Downloads videos in either 1080p or 1080p60fps</summary>
-  
-  ```
+
+Downloads videos in either 1080p or 1080p60fps
+
+```
 echo "-f mp4 -f 137+140/299+140 -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s-%(uploader)s.%(ext)s --no-mtime --sponsorblock-remove all" > ~/.config/yt-dlp/config
 ```
-</details>
-
-
 
 - Configuring To Download From Share Menu
 
